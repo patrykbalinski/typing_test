@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1f7bef8d82.js" crossorigin="anonymous"></script>
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="content-wrapper main-screen">
+        <h1>Typing Test</h1>
+        <div class="words-box">
+            <div class="words-line first-line"></div>
+            <div class="words-line second-line"></div>
+        </div>
+        <input type="text" class="words-input" autofocus>
+        <div class="timer-box"><span class="timer"></span></div>
+        <button class="reset"><i class="fas fa-redo-alt"></i></button>
+    </div>
+    <div class="content-wrapper results-screen hide">
+        <h2>RESULTS</h2>
+        <div class="container-results">
+            <div class="result-box result-background general">
+                <h3>GENERAL</h3>
+                <p>Speed: <span class="result-speed"></span></p>
+                <p>Characters: <span class="result-characters"></span></p>
+                <p>Correct Words: <span class="result-correct"></span></p>
+                <p>Wrong Words: <span class="result-wrong"></span></p>
+                <p>Accuracy : <span class="result-accuracy"></span></p>
+                <p>Key Strokes : <span class="result-keyStrokes"></span></p>
+
+            </div>
+            <div class="result-box result-background wrong-words">
+                <h4>Words you typed incorrectly:</h4>
+            </div>
+            <div class="result-box diagrams">
+                <div class="diagram result-background diagram-1">
+                    <div class="chartdiv"></div>
+                </div>
+                <div class="diagram result-background diagram-2">
+                    <p>diagram 2</p>
+                </div>
+                <div class="result-buttons">
+                    <button class="result-reset"><i class="fas fa-redo-alt"></i></button>
+                    <button><i class="fas fa-save"></i></button>
+                    <button><i class="fas fa-share-alt"></i></button>
+                    <button><i class="fas fa-cloud-upload-alt"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./commonWords.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
